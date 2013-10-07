@@ -1,4 +1,4 @@
-Installation
+### Installation
 
     git clone git://github.com/vincecarney/dotfiles.git
 
@@ -15,7 +15,7 @@ Create symlinks:
     ln -s ~/dotfiles/vim ~/.vim
     ln -s ~/dotfiles/global-gitignore ~/.gitignore
 
-Vim Plugin Bundles
+### Vim Plugin Bundles
 
 Plugins that are published on github can be installed as submodules. For
 example:
