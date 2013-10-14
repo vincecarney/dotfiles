@@ -3,7 +3,7 @@ syntax on
 filetype plugin indent on
 
 colo desert
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree "
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
 cd /srv/python-environments/
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -74,17 +74,18 @@ set hlsearch
 set wrap !
 set sidescroll=5
 set listchars+=precedes:<,extends:>
-set colorcolumn=80
 
 set splitbelow
 set splitright
+
+call matchadd('ColorColumn', '\%81v', 100)
 
 let NERDTreeIgnore = ['\.pyc$']
 let g:syntastic_python_checkers=['flake8']
 
 nmap ; :CtrlPBuffer<CR>
-nmap <F8> :TagbarToggle<CR>
-nmap <F9> :NERDTreeToggle<CR>
+nmap <F8> :NERDTreeToggle<CR>
+nmap <F9> :TagbarToggle<CR>
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
