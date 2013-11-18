@@ -5,7 +5,7 @@ filetype plugin indent on
 colo desert
 " autocmd VimEnter * NERDTree "
 autocmd FileType html setlocal shiftwidth=4 tabstop=4
-cd /srv/python-environments/
+cd /srv/
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " Use :help 'option' to see the documentation for the given option.
