@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-unbiased"]
 	path = vim/bundle/vim-unbiased
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "vim/bundle/rust.vim"]
+	path = vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
