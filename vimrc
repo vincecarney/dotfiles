@@ -78,8 +78,6 @@ set listchars+=precedes:<,extends:>
 set splitbelow
 set splitright
 
-call matchadd('ColorColumn', '\%81v', 100)
-
 let NERDTreeIgnore = ['\.pyc$']
 let g:syntastic_python_checkers=['flake8']
 
