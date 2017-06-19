@@ -81,6 +81,16 @@ set splitright
 let NERDTreeIgnore = ['\.pyc$']
 let g:syntastic_python_checkers=['flake8']
 
+function Py2()
+  let g:syntastic_python_python_exec = '/usr/bin/python'
+endfunction
+
+function Py3()
+  let g:syntastic_python_python_exec = '/usr/bin/python3'
+endfunction
+
+call Py3() 
+
 nmap ; :CtrlPBuffer<CR>
 nmap <F8> :NERDTreeToggle<CR>
 nmap <F9> :TagbarToggle<CR>
