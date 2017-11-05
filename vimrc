@@ -78,10 +78,20 @@ set listchars+=precedes:<,extends:>
 set splitbelow
 set splitright
 
-call matchadd('ColorColumn', '\%81v', 100)
-
 let NERDTreeIgnore = ['\.pyc$']
-let g:syntastic_python_checkers=['flake8']
+
+let g:syntastic_python_checkers=['pyflakes']
+
+function Py2()
+  let g:syntastic_python_python_exec = '/usr/bin/python'
+endfunction
+
+function Py3()
+  let g:syntastic_python_python_exec = '/usr/bin/python3'
+  let g:syntastic_python_pyflakes_exec = '/usr/bin/pyflakes3'
+endfunction
+
+call Py3()
 
 nmap ; :CtrlPBuffer<CR>
 nmap <F8> :NERDTreeToggle<CR>
