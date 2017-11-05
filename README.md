@@ -14,6 +14,10 @@ Create symlinks:
     ln -s ~/dotfiles/vim ~/.vim
     ln -s ~/dotfiles/global-gitignore ~/.gitignore
 
+Flake8:
+
+    apt install python-flake8 python3-flake8
+
 ### Vim Plugin Bundles
 
 Plugins that are published on github can be installed as submodules. For
