@@ -1,5 +1,6 @@
 ### Installation
 
+    cd ~/dotfiles
     git clone git://github.com/vincecarney/dotfiles.git
 
 Where possible, Vim plugins are installed as git submodules. Check these out by
